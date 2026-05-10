@@ -32,7 +32,7 @@ contract StakingV2 is StakingV1 {
         rewardMultiplier = rewardMultiplier_;
     }
 
-    function _onBalanceChange(address account) internal override {
+    function _onBalanceChange(address account) internal virtual override {
         _accrue(account);
     }
 
